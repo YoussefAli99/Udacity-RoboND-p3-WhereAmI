@@ -44,6 +44,9 @@
       <material name="green"/>
     </visual>
   </link>
+  <gazebo reference="left_wheel">
+    <material>Gazebo/Green</material>
+  </gazebo>
 
   <link name="right_wheel">
     <inertial>
@@ -71,9 +74,12 @@
       <material name="green"/>
     </visual>
   </link>
+  <gazebo reference="right_wheel">
+    <material>Gazebo/Green</material>
+  </gazebo>
 
   <link name='chassis'>
-    <pose>0 0 0.1 0 0 0</pose>
+    <pose>0 0 0.15 0 0 0</pose>
 
     <inertial>
       <mass value="15.0"/>
@@ -132,6 +138,9 @@
     </visual>
 
   </link>
+  <gazebo reference="chassis">
+    <material>Gazebo/Red</material>
+  </gazebo>
 
   <joint type="continuous" name="left_wheel_hinge">
     <origin xyz="0 0.2 0" rpy="0 0 0"/>
